@@ -92,7 +92,7 @@ section .title::after {
   bottom: -8px;
   left: 50%;
   font-size: 20px;
-  color: cyan;
+  color: goldenrod;
   padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
@@ -151,7 +151,21 @@ section .title::after {
 }
 
 .navbar.sticky .logo a {
-  background: cyan;
+  background: repeating-linear-gradient(
+    -45deg,
+    red 0%,
+    yellow 7.14%,
+    rgb(0, 255, 0) 14.28%,
+    rgb(0, 255, 255) 21.4%,
+    cyan 28.56%,
+    magenta 42.84%,
+    red 50%
+  );
+  background-size: 600vw 600vw;
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  animation: slide 8s linear infinite;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -171,7 +185,7 @@ section .title::after {
 }
 
 .navbar .menu li a:hover {
-  color: cyan;
+  color: goldenrod;
 }
 
 .navbar.sticky .menu li a:hover {
@@ -190,7 +204,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: cyan;
+  background: goldenrod;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -248,7 +262,7 @@ section .title::after {
 }
 
 .home .home-content .text-2 span {
-  color: cyan;
+  color: goldenrod;
   transition: all 0.3s ease;
 }
 
@@ -258,7 +272,7 @@ section .title::after {
 }
 
 .home .home-content .text-3 span {
-  color: cyan;
+  color:goldenrod;
   font-weight: 500;
 }
 
@@ -271,12 +285,12 @@ section .title::after {
   margin-top: 20px;
   font-weight: 400;
   border-radius: 6px;
-  border: 2px solid cyan;
+  border: 2px solid goldenrod;
   transition: all 0.3s ease;
 }
 
 .home .home-content a:hover {
-  color: cyan;
+  color: goldenrod;
   background: none;
 }
 
@@ -307,7 +321,7 @@ section .title::after {
 }
 
 .about .about-content .right .text span {
-  color: cyan;
+  color: goldenrodcyan;
 }
 
 .about .about-content .right p {
@@ -316,19 +330,19 @@ section .title::after {
 
 .about .about-content .right a {
   display: inline-block;
-  background: cyan;
+  background: goldenrod;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid cyan;
+  border: 2px solid goldenrod;
   transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover {
-  color: cyan;
+  color: goldenrod;
   background: none;
 }
 
@@ -361,7 +375,7 @@ section .title::after {
 }
 
 .services .serv-content .card:hover {
-  background: cyan;
+  background: goldenrod;
 }
 
 .services .serv-content .card .box {
@@ -374,7 +388,7 @@ section .title::after {
 
 .services .serv-content .card i {
   font-size: 50px;
-  color: cyan;
+  color: goldenrod;
   transition: color 0.3s ease;
 }
 
@@ -410,19 +424,19 @@ section .title::after {
 
 .skills .skills-content .left a {
   display: inline-block;
-  background: cyan;
+  background: goldenrod;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   padding: 8px 16px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid cyan;
+  border: 2px solid goldenrod;
   transition: all 0.3s ease;
 }
 
 .skills .skills-content .left a:hover {
-  color: cyan;
+  color: goldenrod;
   background: none;
 }
 
@@ -455,7 +469,7 @@ section .title::after {
   height: 100%;
   left: 0;
   top: 0;
-  background: cyan;
+  background: goldenrod;
 }
 
 .skills-content .right .html::before {
@@ -493,7 +507,7 @@ section .title::after {
 }
 
 .teams .carousel .card:hover {
-  background: cyan;
+  background: goldenrod;
 }
 
 .teams .carousel .card .box {
@@ -538,7 +552,7 @@ section .title::after {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid cyan !important;
+  border: 2px solid goldenrod !important;
   transition: all 0.3s ease;
 }
 
@@ -549,7 +563,7 @@ section .title::after {
 
 .owl-dot.active,
 .owl-dot:hover {
-  background: cyan !important;
+  background: goldenrod !important;
 }
 
 /* contact section styling */
@@ -587,7 +601,7 @@ section .title::after {
 
 .contact .contact-content .row i {
   font-size: 25px;
-  color: cyan;
+  color: goldenrod;
 }
 
 .contact .contact-content .info .head {
@@ -657,8 +671,8 @@ section .title::after {
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: cyan;
-  border: 2px solid cyan;
+  background: goldenrod;
+  border: 2px solid goldenrod;
   transition: all 0.3s ease;
 }
 
@@ -676,7 +690,7 @@ footer {
 }
 
 footer span a {
-  color: cyan;
+  color: goldenrod;
   text-decoration: none;
 }
 
