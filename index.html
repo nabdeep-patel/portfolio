@@ -347,13 +347,16 @@ section .title::after {
 }
 
 /* services section styling */
-.services,
-.teams {
+.services{
   color: #fff;
   background: #111;
 }
+.teams {
+  color: #111;
+  background: #fff;
+}
 
-.services .title::before,
+.services .title::before,.contact .title::before,
 .teams .title::before {
   background: #fff;
 }
@@ -533,7 +536,7 @@ section .title::after {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid crimson;
+  border: 5px solid goldenrod;
   transition: all 0.3s ease;
 }
 
@@ -567,8 +570,13 @@ section .title::after {
 }
 
 /* contact section styling */
+.contact{
+  color: #fff;
+  background: #111;
+}
 .contact .title::after {
-  content: "get in touch";
+  content: "Get In Touch";
+  background: #111;
 }
 
 .contact .contact-content .column {
@@ -888,8 +896,8 @@ footer span a:hover {
     <div class="home-content">
       <div style="margin-top:50px ;" class="text-1">Hi, I am</div>
       <div class="text-2"><span>Nabdeep Patel</span></div>
-      <div class="text-3"><span class="typing"></span></div>
-      <div style="margin-top:50px ;"class="text-1">Connect with me</div>
+    <div class="text-3">Hire me for <span class="typing"></span></div>
+    <div style="margin-top:50px ;"class="text-1">Connect with me</div>
       <hr width="200px;">
       <a style="border:none;padding: 8px;margin-top:5px;font-size:27px;" href="https://github.com/nabdeep-patel" target="_blank"><i class="fab fa-github"></i></a>
       <a style="border:none;padding: 8px;margin-top:5px;font-size:27px;" href="https://linkedin.com/nabdeeppatel" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -911,17 +919,11 @@ footer span a:hover {
       </div>
       <div class="column right">
         <div class="text">
-          I am Sarfaraz and I'm a <span class="typing-2"></span>
+          I am Nabdeep Patel<br> Skills: <span style="color: goldenrod;" class="typing-2"></span>
         </div>
         <p>
-          Graduated with a Bachelor's degree in Mechanical Engineering as I
-          completed my final year research-based project on Computational
-          Fluid Dynamic Analysis on Helical Coil Heat Exchanger using ANSYS
-          Fluent software and completed 6 months industry internship at
-          Water Resource Department. I worked at WirCab Machines as a design
-          engineer where I got proficient with AutoCAD and SolidWorks. Now I
-          am a Full-Stack Web Developer and exploring the world of
-          programming.
+          I am a Delhi University student with a passion for data science, analytics, and web development. I am proficient in Python, Machine Learning, Tableau, and SQL, with hands-on experience as a Business Analyst at Magical Mantras and Chatbot Developer at MyndSutra. Committed to leveraging skills for impactful, data-driven solutions and responsive web applications. <br>
+          Seeking opportunities to contribute to projects aligning with values and aspirations.
         </p>
         <a href="https://drive.google.com/file/d/1nphjZ5DbAGzRQjQbm1TIZ2xN1CM1EPZV/view?usp=sharing" target="_blank">Download Resume</a>
       </div>
@@ -931,6 +933,66 @@ footer span a:hover {
 
 <!-- SERVICE SECTION -->
 <section class="services" id="services">
+  <div class="max-width">
+    <h2 class="title">My services</h2>
+    <div class="serv-content">
+    <div class="carousel owl-carousel">
+
+      <div class="card">
+        <div class="box">
+          <i class="fab fa-python"></i>
+          <div class="text">Python Development</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-database"></i>
+          <div class="text">My SQL</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-chart-bar"></i>
+          <div class="text">Data Analysis</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-brain"></i>
+          <div class="text">Machine Learning</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-chart-pie"></i>
+          <div class="text">Dashboards</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-cloud-download-alt"></i>
+          <div class="text">Data Scraping</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-briefcase"></i>
+          <div class="text">Business Develpment</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-code"></i>
+          <div class="text">Web Development</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section> 
+
+<!-- TEAMS SECTION -->
+<section class="teams" id="teams">
   <div class="max-width">
     <h2 class="title">My services</h2>
     <div class="serv-content">
@@ -962,104 +1024,6 @@ footer span a:hover {
             I am currently getting fimiliar with data science and machine
             learning technologies
           </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS SECTION -->
-<section class="skills" id="skills">
-  <div class="max-width">
-    <h2 class="title">My skills</h2>
-    <div class="skills-content">
-      <div class="column left">
-        <div class="text">My skills & experiences.</div>
-        <p>
-          I am currently learning from curriculum of FreeCodeCamp and
-          youtube channel CodeWithHarry.
-        </p>
-        <a href="https://www.freecodecamp.org/sarfarazkhan" target="_blank">FreeCodeCamp<i class="fab fa-free-code-camp"></i></a>
-      </div>
-      <div class="column right">
-        <div class="bars">
-          <div class="info">
-            <span>Python, JavaScript</span>
-            <span>70%</span>
-          </div>
-          <div class="line html"></div>
-        </div>
-        <div class="bars">
-          <div class="info">
-            <span>Front-End Development</span>
-            <span>80%</span>
-          </div>
-          <div class="line css"></div>
-        </div>
-        <div class="bars">
-          <div class="info">
-            <span>Back-End Development</span>
-            <span>65%</span>
-          </div>
-          <div class="line js"></div>
-        </div>
-        <div class="bars">
-          <div class="info">
-            <span>Database & Testing</span>
-            <span>60%</span>
-          </div>
-          <div class="line php"></div>
-        </div>
-        <div class="bars">
-          <div class="info">
-            <span>3D-Modeling</span>
-            <span>75%</span>
-          </div>
-          <div class="line mysql"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TEAMS SECTION -->
-<section class="teams" id="teams">
-  <div class="max-width">
-    <h2 class="title">My teams</h2>
-    <div class="carousel owl-carousel">
-      <div class="card">
-        <div class="box">
-          <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="" />
-          <div class="text">Sameer</div>
-          <p>AI/ML Engineer</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="box">
-          <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="" />
-          <div class="text">Riddhi</div>
-          <p>Security Analyst at TCS</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="box">
-          <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="" />
-          <div class="text">Prabhjot</div>
-          <p>M.S in Industrial Engineering</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="box">
-          <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="" />
-          <div class="text">Sashant</div>
-          <p>Assistant System Engineer at TCS</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="box">
-          <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="" />
-          <div class="text">Hrishikesh</div>
-          <p>Analyst at Flex</p>
         </div>
       </div>
     </div>
@@ -1102,26 +1066,7 @@ footer span a:hover {
           </div>
         </div>
       </div>
-      <div class="column right">
-        <div class="text">Message me</div>
-        <form action="#">
-          <div class="fields">
-            <div class="field name">
-              <input type="text" placeholder="Name" required />
-            </div>
-            <div class="field email">
-              <input type="email" placeholder="Email" required />
-            </div>
-          </div>
-          <div class="field">
-            <input type="text" placeholder="Subject" required />
-          </div>
-          <div class="field textarea">
-            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-          </div>
-          <div class="button-area">
-            <button type="submit">Send message</button>
-          </div>
+      
         </form>
       </div>
     </div>
@@ -1174,11 +1119,17 @@ $(document).ready(function () {
   // typing text animation script
   var typed = new Typed(".typing", {
     strings: [
-    "Mechanical Engineer",
-    "Full Stack Developer",
-    "Lifelong Learner",
-    "Web Designer",
-    "Freelancer"],
+    "Data Analysis",
+    "Data Visualisation",
+    "Data Collection",
+    "Data Management",
+    "Creating Models",
+    "Creating Chatbot",
+    "Creating Dashboard",
+    "Website Marketing",
+    "Website Maintenance",
+    "Website Security",
+    "Website Analytics"],
 
     typeSpeed: 100,
     backSpeed: 60,
@@ -1187,15 +1138,19 @@ $(document).ready(function () {
 
   var typed = new Typed(".typing-2", {
     strings: [
-    "Mechanical Engineer",
-    "Full Stack Developer",
-    "Lifelong Learner",
-    "Web Designer",
-    "Freelancer"],
+    "Python","Numpy","Matplotlib","Seaborn",
+    "Machine Learning",
+    "Analytics",
+    "SQL",
+    "Tableau","My Excel",
+    "Gemini API","LinkedIN","Canva","Mailchip","myphpadmin","Google Cloud"
+    ],
 
     typeSpeed: 100,
     backSpeed: 60,
     loop: true });
+
+  
 
 
   // owl carousel script
