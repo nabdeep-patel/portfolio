@@ -1,404 +1,334 @@
-
 <!DOCTYPE html>
-<html lang="en" >
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    .background-30px {
+            background-image: url('https://th.bing.com/th/id/OIP.f_MrT9yLVE_HxNSliOHBgQHaEL?rs=1&pid=ImgDetMainhttps://th.bing.com/th/id/OIP.f_MrT9yLVE_HxNSliOHBgQHaEL?rs=1&pid=ImgDetMain'); /* Replace with your image URL */
+            background-size: 300px 220px;
+            background-repeat: no-repeat; 
+      background-position: top;}
+      .nav-but {
+    display: inline-block;
+    padding: 10px 20px;                
+    margin: 5px;                      
+    font-size: 16px;                  
+    font-weight: bold;                
+    color: white;                     
+    background-color: #007BFF;        
+    border: none;                     
+    border-radius: 5px;               
+    text-align: left;               
+    text-decoration: none;            
+    cursor: pointer;                  
+    transition: background-color 0.3s;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Portfolio - Nabdeep Patel">
-  <meta name="keywords" content="portfolio, Nabdeep Patel, web development, data science, analytics, machine learning, artificial intelligence, programming, coding, big data, data analysis, data visualization, data engineering, data mining, predictive modeling, statistical analysis, web design, front-end development, back-end development">
-  <meta name="author" content="Nabdeep Patel">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Nabdeep Patel</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<link rel="apple-touch-icon" type="image/png" href="https://nabdeep-patel.github.io/portfolio/Della%20Respira.png" />    
-<meta name="apple-mobile-web-app-title" content="Nabdeep Patel Portfolio">
-<link rel="shortcut icon" type="image/x-icon" href="https://nabdeep-patel.github.io/portfolio/Della%20Respira.png" />
-<link rel="mask-icon" type="image/x-icon" href="https://nabdeep-patel.github.io/portfolio/Della%20Respira.png" />
+.nav-but:hover {
+    background-color: #0056b3;        /* Darker background color on hover */
+}
 
-<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-<link rel="stylesheet" href="index.css"/>
-<script>
-  window.console = window.console || function(t) {};
-</script>
+    </style>
+  </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-  
-  
-</head>
-
-<body translate="no">
-  <div class="scroll-up-btn">
-  <i class="fas fa-angle-up"></i>
-</div>
-<nav class="navbar">
-  <div class="max-width">
-    <div class="logo"><a href="#">My Portfolio </a></div>
-    <ul class="menu">
-      <li><a href="#home" class="menu-btn">Home</a></li>
-      <li><a href="#about" class="menu-btn">About</a></li>
-      <li><a href="#services" class="menu-btn">Services</a></li>
-      <li><a href="#teams" class="menu-btn">Projects</a></li>
-      <li><a href="#contact" class="menu-btn">Contact</a></li>
-      <li><a href="#hire" style="padding-left:10px;padding-right:10px;border: 2px solid goldenrod; border-radius:9px; cursor: pointer;"class="menu-btn">Hire Me</a></li>
-    </ul>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left background-30px" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-padding w3-hover-black" style="border-radius:100px" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM" style="width:45%;border-radius:90px"><br>
+    <h4 class="w3-text-white"><b>Nabdeep Patel</b></h4>
+    <p style="margin-top:-12px;padding:0px" class="w3-text-white">Data Science and Artificial Intelligence</p>
+    <hr>
+    
   </div>
+  <div class="w3-bar-block "> 
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item nav-but w3-button w3-padding " ><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item nav-but w3-button w3-padding" style="background-color:#39BC05"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item nav-but w3-button w3-padding"><i class="fa fa-briefcase fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large" style="text-align: center;">
+        <i class="fa fa-github w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: black; transition: color 0.3s, transform 0.3s;"></i>
+        <i class="fa fa-linkedin w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: blue; transition: color 0.3s, transform 0.3s;"></i>
+        <i class="fa fa-youtube w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: red; transition: color 0.3s, transform 0.3s;"></i>
+    <i class="fa fa-envelope w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: green; transition: color 0.3s, transform 0.3s;"></i>
+    </div>
+
+    <script>
+        document.querySelectorAll('.w3-hover-opacity').forEach(icon => {
+            icon.addEventListener('mouseover', () => {
+                
+                icon.style.transform = 'scale(1.2)';
+            });
+            icon.addEventListener('mouseout', () => {
+                icon.style.transform = 'scale(1)';
+            });
+        });
+    </script>
 </nav>
 
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <img src="https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large ">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-black" style="border-bottom-right-radius: 40px;" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+   <h3 style="font-family: 'Arial', sans-serif; font-weight: bold; margin-bottom: 10px;">
+    <span style="font-size: 18px; color: #333;">Portfolio</span>
+    <span style="font-size: 14px; color: #888; margin: 0 5px;">/</span>
+    <span style="font-size: 16px; color: #333;">Projects</span>
+</h3>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div>
+    </div>
+  </header>
   
-<!-- HOME SECTION -->
-<section class="home" id="home">
-  <div class="max-width">
-    <div class="home-content">
-      <div style="margin-top:50px ;" class="text-1">Hi, I am</div>
-      <div class="text-2"><span>Nabdeep Patel</span></div>
-    <div class="text-3">Hire me for <span class="typing"></span></div>
-    <div style="margin-top:50px ;"class="text-1">Connect with me</div>
-      <hr width="200px;">
-      <a style="border:none;padding: 8px;margin-top:5px;font-size:27px;" href="https://github.com/nabdeep-patel" target="_blank"><i class="fab fa-github"></i></a>
-      <a style="border:none;padding: 8px;margin-top:5px;font-size:27px;" href="https://linkedin.com/nabdeeppatel" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a style="border:none;padding: 8px;margin-top:5px;font-size:27px;" href="mailto:nabdeeppatel@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-      <a style="border:none;padding: 8px;margin-top:5px;font-size:27px;" href="tel:+918800613281" target="_blank"><i class="fas fa-phone"></i></a>
-      <a style="border:none;padding: 8px;margin-top:5px;font-size:27px;" href="https:" target="_blank"><i class="fas fa-globe"></i></a>
-      <a style="border:none;padding: 8px;margin-top:5px;font-size:27px;" href="#" target="_blank"><i class="fas fa-icon-name"></i></a>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT SECTION -->
-<section class="about" id="about">
-  <div class="max-width">
-    <h2 class="title">About me</h2>
-    <div class="about-content">
-      <div class="column left">
-        <img src="https://avatars.githubusercontent.com/u/119069542?v=4" alt="" />
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
-      <div class="column right">
-        <div class="text">
-          I am Nabdeep Patel<br> Skills: <span style="color: goldenrod;" class="typing-2"></span>
-        </div>
-        <p>
-          I am a Delhi University student with a passion for data science, analytics, and web development. I am proficient in Python, Machine Learning, Tableau, and SQL, with hands-on experience as a Business Analyst at Magical Mantras and Chatbot Developer at MyndSutra. Committed to leveraging skills for impactful, data-driven solutions and responsive web applications. <br>
-          Seeking opportunities to contribute to projects aligning with values and aspirations.
-        </p>
-        <a href="https://drive.google.com/file/d/1nF64jZtyqmgDn65FkmeVL8dzaDTnOwiO/view?usp=drivesdk" target="_blank">Download Resume</a>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
   </div>
-</section>
-
-<!-- SERVICE SECTION -->
-<section class="services" id="services">
-  <div class="max-width">
-    <h2 class="title">My services</h2>
-    <div class="serv-content">
-    <div class="carousel owl-carousel">
-
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fab fa-python"></i>
-          <div class="text">Python Development</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-database"></i>
-          <div class="text">My SQL</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-chart-bar"></i>
-          <div class="text">Data Analysis</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-brain"></i>
-          <div class="text">Machine Learning</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-chart-pie"></i>
-          <div class="text">Dashboards</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-cloud-download-alt"></i>
-          <div class="text">Data Scraping</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-briefcase"></i>
-          <div class="text">Business Develpment</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-code"></i>
-          <div class="text">Web Development</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-code-branch"></i>
-          <div class="text">Flask App</div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</section> 
-
-<!-- TEAMS SECTION -->
-<section class="teams" id="teams">
-  <div class="max-width">
-    <h2 class="title">My Projects</h2>
-    <div class="serv-content">
-    <div class="carousel owl-carousel">
-
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fab fa-python"></i>
-          <div class="text">Python Development</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-database"></i>
-          <div class="text">My SQL</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-chart-bar"></i>
-          <div class="text">Data Analysis</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-brain"></i>
-          <div class="text">Machine Learning</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-chart-pie"></i>
-          <div class="text">Dashboards</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-cloud-download-alt"></i>
-          <div class="text">Data Scraping</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-briefcase"></i>
-          <div class="text">Business Develpment</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-code"></i>
-          <div class="text">Web Development</div>
-        </div>
-      </div>
-      <div style="width:100%;" class="card">
-        <div class="box">
-          <i class="fas fa-code-branch"></i>
-          <div class="text">Flask App</div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section class="contact" id="contact">
-  <div class="max-width">
-    <h2 class="title">Contact me</h2>
-    <div class="contact-content">
-      <div class="column left">
-        <div class="text"> Let&rsquo;s Collaborate!</div>
-        <p>
-          I am open to New Projects, Creative Ideas, and Exciting Opportunities. I am eager to contribute to your visions and bring them to life. Whether you have a project in mind or want to explore innovative ideas, I am here to discuss and make it happen.
-<br>Fill out the contact form, and I will get back to you within 24 hours.
-
-        </p>
-        <div class="icons">
-          <div class="row">
-            <i class="fas fa-user"></i>
-            <div class="info">
-              <div class="head">Name</div>
-              <div style="color: goldenrod;"class="sub-title">Nabdeep Patel</div>
-            </div>
-          </div>
-          <div class="row"><a href="tel:+918800613281" target="_blank">
-            <i class="fas fa-phone"></i></a>
-            <div class="info">
-              <div class="head">Call</div>
-              <div style="color: goldenrod;"class="sub-title"><a style="color: goldenrod;" href="tel:+918800613281" target="_blank">+91 8800613281</a></div>
-            </div>
-          </div>
-          <div class="row"><a href="mailto:nabdeeppatel@gmail.com" target="_blank">
-            <i class="fas fa-envelope"></i></a>
-            <div class="info">
-              <div class="head">Email</div>
-              <div class="sub-title"><a style="color: goldenrod;" href="mailto:nabdeeppatel@gmail.com" target="_blank">nabdeeppatel@gmail.com</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column right">
-        <div class="text">Hire me</div>
-        <form id="hire"action="https://formspree.io/f/mgegejzk" method="post">
-          <div class="fields">
-            <div class="field name">
-              <input type="text" name="name" placeholder="Name" required />
-            </div>
-            <div class="field email">
-              <input type="email" name="email" placeholder="Email" required />
-            </div>
-          </div>
-          <div class="field">
-            <input type="text" name="subject" placeholder="Subject" required />
-          </div>
-          <div class="field textarea">
-            <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
-          </div>
-          <div class="button-area">
-            <button type="submit">Send Email</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-
   
-<!-- FOOTER SECTION -->
-<footer>
-  <span>Created By
-    <a href="https://github.com/nabdeep-patel" target="_blank"><span class="fab fa-github"></span> Nabdeep Patel</a>
-    | Personal Portfolio <span class="far fa-copyright"></span> 2024</span>
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://www.w3schools.com/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="https://www.w3schools.com/w3images/me2.jpg" alt="Me" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <hr>
+    
+    <h4>Technical Skills</h4>
+    <!-- Progress bars / Skills -->
+    <p>Photography</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <p>Web Design</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>Photoshop</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <p>
+      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </button>
+    </p>
+    <hr>
+    
+    <h4>How much I charge</h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">1GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">Unlimited Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>email@email.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Chicago, US</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>512312311</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+<footer class="w3-container w3-padding-32" style="background-image: url('https://th.bing.com/th/id/OIP.f_MrT9yLVE_HxNSliOHBgQHaEL?rs=1&pid=ImgDetMain'); background-size: cover;">
+    <div class="w3-row-padding">
+        <!-- Left side for social buttons and attribution -->
+        <div class="w3-half w3-text-white" style="text-align: left;">
+            <h4>Connect with me</h4>
+            <div>
+                <a href="https://www.linkedin.com/in/nabdeeppatel" class="w3-button w3-blue w3-round-large"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="w3-button w3-green w3-round-large"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.github.com/nabdeep-patel" class="w3-button w3-black w3-round-large"><i class="fa fa-github"></i></a>
+                <a href="#" class="w3-button w3-red w3-round-large"><i class="fa fa-play"></i></a>
+               <a href="mailto:nabdeeppatel@gmail.com" class="w3-button w3-indigo w3-round-large"><i class="fa fa-inbox"></i></a>
+            </div>
+            <p>Made with <i class="fa fa-github w3-text-white w3-large"></i> by Nabdeep Patel</p>
+        </div>
+
+        <!-- Right side for profile information -->
+        <div class="w3-half w3-text-white" style="text-align: right;">
+            <img src="https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM" alt="Nabdeep Patel" style="width: 100px; height: 100px; border-radius: 50%;">
+                <br>
+            <h4><b>Nabdeep Patel</b></h4>
+            <p style="margin-top: -12px; padding: 0;">Data Science and Artificial Intelligence</p>
+        </div>
+    </div>
 </footer>
   
-      <script id="rendered-js" >
-$(document).ready(function () {
-  $(window).scroll(function () {
-    // sticky navbar on scroll script
-    if (this.scrollY > 50) {
-      $(".navbar").addClass("sticky");
-    } else {
-      $(".navbar").removeClass("sticky");
-    }
-
-    // scroll-up button show/hide script
-    if (this.scrollY > 200) {
-      $(".scroll-up-btn").addClass("show");
-    } else {
-      $(".scroll-up-btn").removeClass("show");
-    }
-  });
-
-  // slide-up script
-  $(".scroll-up-btn").click(function () {
-    $("html").animate({ scrollTop: 0 });
-    // removing smooth scroll on slide-up button click
-    $("html").css("scrollBehavior", "auto");
-  });
-
-  $(".navbar .menu li a").click(function () {
-    // applying again smooth scroll on menu items click
-    $("html").css("scrollBehavior", "smooth");
-  });
-
-  // toggle menu/navbar script
-  $(".menu-btn").click(function () {
-    $(".navbar .menu").toggleClass("active");
-    $(".menu-btn i").toggleClass("active");
-  });
-
-  // typing text animation script
-  var typed = new Typed(".typing", {
-    strings: [
-    "Data Analysis",
-    "Data Visualisation",
-    "Data Collection",
-    "Data Management",
-    "Creating Models",
-    "Creating Chatbot",
-    "Creating Dashboard",
-    "Website Marketing",
-    "Website Maintenance",
-    "Website Security",
-    "Website Analytics"],
-
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true });
 
 
-  var typed = new Typed(".typing-2", {
-    strings: [
-    "Python","Numpy","Matplotlib","Seaborn",
-    "Machine Learning",
-    "Analytics",
-    "SQL",
-    "Tableau","My Excel",
-    "Gemini API","LinkedIN","Canva","Mailchip","myphpadmin","Google Cloud"
-    ],
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true });
-
-  
-
-
-  // owl carousel script
-  
-  $(".carousel").owlCarousel({
-    margin: 20,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 1400,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: false },
-
-      600: {
-        items: 2,
-        nav: false },
-
-      1000: {
-        items: 3,
-        nav: false } } });
-
-
-
-});
-//# sourceURL=pen.js
-    </script>
-
-  
 </body>
-
 </html>
