@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 10px;
+}
+
+.skill-btn {
+    background-color: #252323;
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    padding: 6px 9px;
+    font-size: 12px;
+}
+    .background-30px {
+            background-image: url('https://th.bing.com/th/id/OIP.f_MrT9yLVE_HxNSliOHBgQHaEL?rs=1&pid=ImgDetMainhttps://th.bing.com/th/id/OIP.f_MrT9yLVE_HxNSliOHBgQHaEL?rs=1&pid=ImgDetMain'); /* Replace with your image URL */
+            background-size: 300px 220px;
+            background-repeat: no-repeat; 
+      background-position: top;}
+      .nav-but {
+    display: inline-block;
+    overflow:hidden;
+    padding: 10px 20px;                
+    margin: 5px;                      
+    font-size: 16px;                  
+    font-weight: bold;                
+    color: white;                     
+    background-color: #007BFF;        
+    border: none;                     
+    border-radius: 5px;               
+    text-align: left;               
+    text-decoration: none;            
+    cursor: pointer;                  
+    transition: background-color 0.3s;
+}
+
+.nav-but:hover {
+    background-color: #0056b3;        /* Darker background color on hover */
+}
+      .work-experience h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job-details {
+    padding: 10px;
+    border-left: 5px solid #007BFF;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.job h4 {
+    margin: 0 0 5px;
+    color: #007BFF;
+}
+
+.job .company {
+    font-weight: bold;
+    color: #333;
+}
+
+.job .date {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.job-description {
+    margin: 0;
+    color: #555;
+}
+
+
+    </style>
+  </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left background-30px" style="overflow:hidden; z-index:3;width:300px;z-index:10;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-padding w3-hover-black" style="border-radius:100px" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM" style="width:45%;border-radius:90px"><br>
+    <h4 class="w3-text-white"><b>Nabdeep Patel</b></h4>
+    <p style="margin-top:-12px;padding:0px" class="w3-text-white">Data Science and Artificial Intelligence</p>
+    <hr>
+    
+  </div>
+  <div class="w3-bar-block "> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item nav-but w3-button w3-padding " style="background-color:#39BC05"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+    <a href="projects.html" onclick="w3_close()" class="w3-bar-item nav-but w3-button w3-padding" ><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item nav-but w3-button w3-padding"><i class="fa fa-briefcase fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large" style="text-align: center;">
+        <a href="https://www.github.com/nabdeep-patel"><i class="fa fa-github w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: black; transition: color 0.3s, transform 0.3s;"></i></a>
+        <a href="https://www.linkedin.com/in/nabdeeppatel"><i class="fa fa-linkedin w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: blue; transition: color 0.3s, transform 0.3s;"></i></a>
+       <a href="https://wa.me/qr/BHKGHDBORE3VN1"><i class="fa fa-whatsapp w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: green; transition: color 0.3s, transform 0.3s;"></i></a>
+    <a href = "mailto:nabdeeppatel@gmail.com"><i class="fa fa-envelope w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: indigo; transition: color 0.3s, transform 0.3s;"></i></a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.w3-hover-opacity').forEach(icon => {
+            icon.addEventListener('mouseover', () => {
+                
+                icon.style.transform = 'scale(1.2)';
+            });
+            icon.addEventListener('mouseout', () => {
+                icon.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <img src="https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large ">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-black" style="border-bottom-right-radius: 40px;z-index:9;position:fixed;background-color:lightblue;" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+   <h3 style="font-family: 'Arial', sans-serif; font-weight: bold; margin-bottom: 10px;">
+    <span style="font-size: 18px; color: #333;">Portfolio</span>
+    <span style="font-size: 14px; color: #888; margin: 0 5px;">/</span>
+    <span style="font-size: 16px; color: #333;">About Me</span>
+</h3>
+    <div class="w3-section w3-bottombar">
+
+     </div>
+  </header>
+  
+
+  <!-- Images of Me -->
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    
+  <!-- Contact Section -->
+  <div style="margin-top:-30px;margin-bottom:30px; " class="w3-container w3-padding-large ">
+    
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <p>You can use this form to directly connect with me with mail. If you liked my projects and are facinatedd by my profile, you can connect with me by sending a short message for job offer or internship roles with or without payment. I am available 24 x 7 and actively looking for oppertunities to learn and grow.</p>
+    <form action="https://getform.io/f/agdypwdb" method="POST">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <div class="w3-section">
+      <label>Upload a File</label>
+       <input type="file" name="file" style=" padding: 10px;border: 2px solid #ccc; border-radius: 4px; background-color: #f9f9f9;font-size: 16px;color: #333;cursor: pointer;width: 100%;box-sizing: border-box; transition: background-color 0.3s ease, border-color 0.3s ease;" onmouseover="this.style.backgroundColor='#e6e6e6'; this.style.borderColor='#aaa';" onmouseout="this.style.backgroundColor='#f9f9f9'; this.style.borderColor='#ccc';">
+</div> 
+      <button type="submit" style="background-color: #007BFF;color:white;" class="w3-button w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i><b>Send Message</b></button>
+    </form>
+  </div>
+  </div>
+
+<footer class="w3-container w3-padding-32" style="background-image: url('https://th.bing.com/th/id/OIP.f_MrT9yLVE_HxNSliOHBgQHaEL?rs=1&pid=ImgDetMain'); background-size: cover;">
+    <div class="w3-row-padding">
+        <!-- Left side for social buttons and attribution -->
+        <div class="w3-half w3-text-white" style="text-align: left;">
+            <h4>Connect with me</h4>
+            <div>
+                <a href="https://www.linkedin.com/in/nabdeeppatel" class="w3-button w3-blue w3-round-large"><i class="fa fa-linkedin"></i></a>
+                <a href="https://wa.me/qr/BHKGHDBORE3VN1" class="w3-button w3-green w3-round-large"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.github.com/nabdeep-patel" class="w3-button w3-black w3-round-large"><i class="fa fa-github"></i></a>
+                <a href="https://youtube.com/@nabdeeppatel" class="w3-button w3-red w3-round-large"><i class="fa fa-play"></i></a>
+               <a href="mailto:nabdeeppatel@gmail.com" class="w3-button w3-indigo w3-round-large"><i class="fa fa-inbox"></i></a>
+            </div>
+            <p>Made with <i class="fa fa-github w3-text-white w3-large"></i> by Nabdeep Patel</p>
+        </div>
+
+        <!-- Right side for profile information -->
+        <div class="w3-half w3-text-white" style="text-align: right;">
+            <img src="https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM" alt="Nabdeep Patel" style="width: 100px; height: 100px; border-radius: 50%;">
+                <br>
+            <h4><b>Nabdeep Patel</b></h4>
+            <p style="margin-top: -12px; padding: 0;">Data Science and Artificial Intelligence</p>
+        </div>
+    </div>
+</footer>
+  
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+     document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
