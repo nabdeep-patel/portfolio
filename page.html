@@ -1,0 +1,137 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to create a QR Code Generator using Google Colab in this step-by-step tutorial.">
+    <meta name="author" content="Your Name">
+    <title>Create a QR Code Generator using Google Colab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        h2 {
+            color: #343a40;
+        }
+        pre {
+            background-color: #f8f9fa;
+            border: 1px solid #e5e5e5;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .center {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+                margin: 10px;
+            }
+            pre {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Create a QR Code Generator using Google Colab</h1>
+    </header>
+    <div class="container">
+        <div class="center">
+            <a href="https://codecanyon.img.customer.envatousercontent.com/files/372899039/QR-code-Code-canyon-Banner.jpg?auto=compress%2Cformat&amp;q=80&amp;fit=crop&amp;crop=top&amp;max-h=8000&amp;max-w=590&amp;s=7359b32d6e1046de344f8cab77698e40">
+                <img src="https://codecanyon.img.customer.envatousercontent.com/files/372899039/QR-code-Code-canyon-Banner.jpg?auto=compress%2Cformat&amp;q=80&amp;fit=crop&amp;crop=top&amp;max-h=8000&amp;max-w=590&amp;s=7359b32d6e1046de344f8cab77698e40" alt="QR Code Generator" width="90%" height="300">
+            </a>
+        </div>
+        <p>In this tutorial, we will create a QR code generator using Google Colab. Google Colab is a cloud-based platform that allows you to write and execute Python code in a Jupyter notebook-like environment.</p>
+
+        <h2>Prerequisites</h2>
+        <p>Before we get started, you will need the following:</p>
+        <ul>
+            <li>A Google account</li>
+            <li>Access to Google Colab</li>
+        </ul>
+
+        <h2>Step 1: Setting up Google Colab</h2>
+        <p>First, open Google Colab by visiting <a href="https://colab.research.google.com/" target="_blank" rel="noopener">https://colab.research.google.com/</a>. Sign in with your Google account if you are not already logged in.</p>
+
+        <h2>Step 2: Creating a New Colab Notebook</h2>
+        <ol>
+            <li>Click on "New Notebook" to create a new Colab notebook.</li>
+            <li>In the notebook, you can add code cells by clicking the "+" button or pressing "Ctrl+M" followed by "B."</li>
+        </ol>
+
+        <h2>Step 3: Writing the Python Code</h2>
+        <p>Copy and paste the following Python code into a code cell in your Colab notebook:</p>
+        <pre><code>
+# Install the required library
+!pip install qrcode[pil]
+        </code></pre>
+        <p>Copy and paste the following Python code into a code cell in your Colab notebook:</p>
+        <pre><code>
+# Import the required library
+import qrcode
+
+# Generate a QR code object
+qr = qrcode.QRCode(
+    version=1,
+    error_correction=qrcode.constants.ERROR_CORRECT_L,
+    box_size=10,
+    border=4,
+)
+
+# Add data to the QR code
+qr.add_data(input("Enter the link or text:"))
+qr.make(fit=True)
+
+# Create an image from the QR code data
+img = qr.make_image(fill_color="black", back_color="white")
+
+# Save the QR code image
+img.save("my_qr_code.png")
+        </code></pre>
+
+        <h2>Step 4: Running the Code</h2>
+        <p>To run the code cell, click the play button (▶) or press "Shift+Enter."</p>
+
+        <h2>Conclusion</h2>
+        <p>Congratulations! You have created a QR code generator using Google Colab. You can easily customize the data and settings in the code to generate QR codes for various purposes. Your image is saved under the files section of Google Colab; you can download the image.</p>
+        <div class="center">
+            <a href="https://blogger.googleusercontent.com/img/a/AVvXsEj7jA9GDhj6GFItCyZ5MntLWwKAFQYuM1t4u-Vf_KDYewjd-RQARFrzG1jiUBOzkGCvw1BPN3YFsQZSf9JwpiArsw2-SVNMSuJtXiSWbkRE5Q7JuPhlaWZANEpnZ7hKcrNrBNSE7U5JmQdO8TnsBwlxcXsGnJA6wSiFKqLVh1S_4xvfRqk9WR2HDMGfHIUR">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj7jA9GDhj6GFItCyZ5MntLWwKAFQYuM1t4u-Vf_KDYewjd-RQARFrzG1jiUBOzkGCvw1BPN3YFsQZSf9JwpiArsw2-SVNMSuJtXiSWbkRE5Q7JuPhlaWZANEpnZ7hKcrNrBNSE7U5JmQdO8TnsBwlxcXsGnJA6wSiFKqLVh1S_4xvfRqk9WR2HDMGfHIUR" alt="Google Colab Screenshot" width="90%" height="232">
+            </a>
+        </div>
+
+        <h2>Google Colab File (DEMO)</h2>
+        <p style="text-align: left;">Click the below link for the Google Colab file.</p>
+        <p style="text-align: left;"><a href="https://colab.research.google.com/drive/1qZ6QRWLzxtyYHd1HYfqJjPrzeTbkp6F5?usp=sharing" target="_blank">https://colab.research.google.com/drive/1qZ6QRWLzxtyYHd1HYfqJjPrzeTbkp6F5?usp=sharing</a></p>
+        <div class="center">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKDjCT6Jfzmo4LAhEfyXyH3ajr2Z8FjIrFNZSrhgnU&amp;s">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKDjCT6Jfzmo4LAhEfyXyH3ajr2Z8FjIrFNZSrhgnU&amp;s" alt="QR Code Example" width="211" height="78">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+```
