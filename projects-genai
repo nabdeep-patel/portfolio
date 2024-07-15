@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Nabdeep Patel's portfolio showcasing skills in data science, artificial intelligence, Python, Machine Learning, Tableau, and SQL.">
+    <meta name="keywords" content="Nabdeep Patel, Data Science, Artificial Intelligence, Python, Machine Learning, Tableau, SQL, Business Analyst, Chatbot Developer, Portfolio">
+    <meta name="author" content="Nabdeep Patel">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nabdeep Patel's Portfolio">
+    <meta property="og:description" content="Showcasing skills in data science, artificial intelligence, Python, Machine Learning, Tableau, and SQL.">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM">
+    <meta property="og:url" content="https://nabdeep-patel.github.io/portfolio">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nabdeep Patel's Portfolio">
+    <meta name="twitter:description" content="Showcasing skills in data science, artificial intelligence, Python, Machine Learning, Tableau, and SQL.">
+    <meta name="twitter:image" content="https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Nabdeep Patel",
+      "jobTitle": "Data Scientist",
+      "url": "https://nabdeep-patel.github.io/portfolio",
+      "image": "https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM",
+      "sameAs": [
+        "https://www.linkedin.com/in/nabdeeppatel",
+        "https://github.com/nabdeep-patel",
+        "https://youtube.com/@nabdeeppatel"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Delhi",
+        "addressCountry": "India"
+      },
+      "alumniOf": "Delhi University",
+      "studyingIn": "IISER Kolkata",
+      "knowsAbout": ["Data Science", "Artificial Intelligence", "Python", "Machine Learning", "Tableau", "SQL"]
+    }
+    </script>
+    
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    .background-30px {
+            background-image: url('https://th.bing.com/th/id/OIP.f_MrT9yLVE_HxNSliOHBgQHaEL?rs=1&pid=ImgDetMainhttps://th.bing.com/th/id/OIP.f_MrT9yLVE_HxNSliOHBgQHaEL?rs=1&pid=ImgDetMain'); /* Replace with your image URL */
+            background-size: 300px 220px;
+            background-repeat: no-repeat; 
+      background-position: top;}
+      .nav-but {
+    display: inline-block;
+    padding: 10px 20px;                
+    margin: 5px;                      
+    font-size: 16px;                  
+    font-weight: bold;                
+    color: white;                     
+    background-color: #007BFF;        
+    border: none;                     
+    border-radius: 5px;               
+    text-align: left;               
+    text-decoration: none;            
+    cursor: pointer;                  
+    transition: background-color 0.3s;
+}
+
+.nav-but:hover {
+    background-color: #0056b3;        /* Darker background color on hover */
+}
+
+    </style>
+  </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left background-30px" style="overflow:hidden;z-index:10;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-padding w3-hover-black" style="border-radius:100px" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM" style="width:45%;border-radius:90px"><br>
+    <h4 class="w3-text-white"><b>Nabdeep Patel</b></h4>
+    <p style="margin-top:-12px;padding:0px" class="w3-text-white">Data Science and Artificial Intelligence</p>
+    <hr>
+    
+  </div>
+  <div class="w3-bar-block "> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item nav-but w3-button w3-padding " ><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+    <a href="projects.html" onclick="w3_close()" class="w3-bar-item nav-but w3-button w3-padding" style="background-color:#39BC05"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item nav-but w3-button w3-padding"><i class="fa fa-briefcase fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large" style="text-align: center;">
+        <a href="https://www.github.com/nabdeep-patel"><i class="fa fa-github w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: black; transition: color 0.3s, transform 0.3s;"></i></a>
+        <a href="https://www.linkedin.com/in/nabdeeppatel"><i class="fa fa-linkedin w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: blue; transition: color 0.3s, transform 0.3s;"></i></a>
+       <a href="https://wa.me/qr/BHKGHDBORE3VN1"><i class="fa fa-whatsapp w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: green; transition: color 0.3s, transform 0.3s;"></i></a>
+    <a href = "mailto:nabdeeppatel@gmail.com"><i class="fa fa-envelope w3-hover-opacity" style="font-size: 24px; margin: 0 15px; color: indigo; transition: color 0.3s, transform 0.3s;"></i></a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.w3-hover-opacity').forEach(icon => {
+            icon.addEventListener('mouseover', () => {
+                
+                icon.style.transform = 'scale(1.2)';
+            });
+            icon.addEventListener('mouseout', () => {
+                icon.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <img src="https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large ">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-black" style="border-bottom-right-radius: 40px;z-index:9;position:fixed;background-color:lightblue;" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+   <h3 style="font-family: 'Arial', sans-serif; font-weight: bold; margin-bottom: 10px;">
+    <span style="font-size: 18px; color: #333;">Portfolio</span>
+    <span style="font-size: 14px; color: #888; margin: 0 5px;">/</span>
+    <span style="font-size: 16px; color: #333;">Projects</span>
+     <span style="font-size: 14px; color: #888; margin: 0 5px;">/</span>
+    <span style="font-size: 14px; color: #333;">Gen AI</span>
+</h3>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <button class="w3-button w3-white"><i class="fa fa-cogs" style="height:18px;margin-right:9px;margin-bottom:2px;"></i>ML</button>
+      
+      <button class="w3-button w3-black"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhhJREFUSEvF1s+rTVEUwPHPK1IopEzICDEQE6KIKCLFSH4M/AhRwsg/ISEhSSLESCYiCTFgQiEmDBhIKYmihJylfXUc756z73Neb0/u3mffvb5r7bX2WqvPEI2+IeLqBTwGqzEZJ/E+KT0B2/EGV/Epx5hc8Dg8wLQk9BLWp/llrE3z55ifA88F78XhkiV3sTit72BRaW8HTjVZXQcegS1YhVmYlAmOK3+arv0svvWnRDfwsHRwZRfN6ywuH7mW4uJ7VU43cPjvYs115YJDxDpEHPw1uoEvYENL4HPYlAs+gZ0tgY9iTy54Jp60BJ6Kl03g4diPjYVfZrQEjrcd130Qf4Ks6uNbWNL0BtFLcHXEXceKzqIMXoB7GdD4y0DAcW5eAX8YkzI4AuDIIIN341gVvA+HBhm8FWeq4NlFlnk8yOApeFUFx7rp/Xb0GoiPD6QX81tGNapjHeVvboPlvYLvY2FZZhUcxeEjRrUM/lyU1bH42d9zim/RXbzO8HOvFofI8UXq/NANHBZ/RfzWjV7BIXN0ncUBO59SZpvgfypUf2UxrvsGpreUq59hOd7WBVdnL9qeKBRLsQYjK0o0XfWXol26UkRy5P6o7f+0PznNXmSazT2CT2Nbna9ywBOLLvJ2oXnU1c6IfBt5N8Zx7CrtvUgV7t3/guN8RPmyVKNDiUcVoXNSixv+vIkfTU8yx+ImGQPaHzLwL2Q1eB87s+1eAAAAAElFTkSuQmCC" style="height:18px;margin-right:9px;margin-bottom:2px;"/>Gen AI</button>
+      
+  </header>
+   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+     <p style="margin-top:-20px;"> Click the above options to navigate between the Generative AI and Machine Learning Projects</p>
+     <h4><b>Generative AI Projects</b></h4>
+   
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+  <div class="w3-third w3-container w3-margin-bottom">
+      
+      <div class="w3-container w3-white" style="border-radius:2%;box-shadow: 0 4px 6px rgba(0, 0, 0, 1);">
+        <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Norway" style="width:100%;border-radius:4%;margin-top:10px;" class="w3-hover-opacity">
+        <p><b>Handwritten Digit Recognition</b></p>
+        <a href="#" class="w3-button" style="background-color:#007BFF;width:100%;margin-bottom:10px;border-radius:10px;color:white ">Learn More</a>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://www.w3schools.com/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" style="border-radius:70%;margin-left:2px;margin-right:2px" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" style="border-radius:70%;margin-left:2px;margin-right:2px" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" style="border-radius:70%;margin-left:2px;margin-right:2px" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" style="border-radius:70%;margin-left:2px;margin-right:2px" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+     </div></div>
+
+  
+
+<footer class="w3-container w3-padding-32" style="background-image: url('https://th.bing.com/th/id/OIP.f_MrT9yLVE_HxNSliOHBgQHaEL?rs=1&pid=ImgDetMain'); background-size: cover;">
+    <div class="w3-row-padding">
+        <!-- Left side for social buttons and attribution -->
+        <div class="w3-half w3-text-white" style="text-align: left;">
+            <h4>Connect with me</h4>
+            <div>
+                <a href="https://www.linkedin.com/in/nabdeeppatel" class="w3-button w3-blue w3-round-large"><i class="fa fa-linkedin"></i></a>
+                <a href="https://wa.me/qr/BHKGHDBORE3VN1" class="w3-button w3-green w3-round-large"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.github.com/nabdeep-patel" class="w3-button w3-black w3-round-large"><i class="fa fa-github"></i></a>
+                <a href="https://youtube.com/@nabdeeppatel" class="w3-button w3-red w3-round-large"><i class="fa fa-play"></i></a>
+               <a href="mailto:nabdeeppatel@gmail.com" class="w3-button w3-indigo w3-round-large"><i class="fa fa-inbox"></i></a>
+            </div>
+            <p>Made with <i class="fa fa-github w3-text-white w3-large"></i> by Nabdeep Patel</p>
+        </div>
+
+        <!-- Right side for profile information -->
+        <div class="w3-half w3-text-white" style="text-align: right;">
+            <img src="https://media.licdn.com/dms/image/D5603AQE25zGoh1gioA/profile-displayphoto-shrink_800_800/0/1719162198018?e=1725494400&v=beta&t=5pvA_M3FstAqVAYxuWxYLEilVtJ5RI9Tu6MTAwe1AnM" alt="Nabdeep Patel" style="width: 100px; height: 100px; border-radius: 50%;">
+                <br>
+            <h4><b>Nabdeep Patel</b></h4>
+            <p style="margin-top: -12px; padding: 0;">Data Science and Artificial Intelligence</p>
+        </div>
+    </div>
+</footer>
+  
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+  
